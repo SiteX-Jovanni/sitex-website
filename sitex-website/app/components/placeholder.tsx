@@ -3,7 +3,7 @@ import { SiteXLogo1 } from "./SiteXLogo1";
 
 const Placeholder = () => {
   return (
-    <div className="w-full h-screen flex justify-center items-center bg-gradient-to-br from-[#1e3a8a] via-[#1e40af] to-[#2563eb] text-white px-4 py-8 overflow-hidden">
+    <div className="fixed inset-0 w-screen h-screen flex justify-center items-center bg-gradient-to-br from-[#1e3a8a] via-[#1e40af] to-[#2563eb] text-white px-4 py-8 overflow-hidden">
       <div className="text-center max-w-2xl">
         {/* Title Section */}
         <div className="mb-6 md:mb-8">
