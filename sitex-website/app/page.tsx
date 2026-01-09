@@ -14,8 +14,10 @@ import { motion } from "framer-motion";
 import TextType from "./components/TextType";
 import React from "react";
 import "./globals.css";
+import Placeholder from "./components/placeholder";
 
 export default function App() {
+  if (true) return <Placeholder />;
   return (
     <motion.div
       className="min-h-screen bg-white"
