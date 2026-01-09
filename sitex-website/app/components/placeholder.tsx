@@ -4,15 +4,17 @@ import { SiteXLogo1 } from "./SiteXLogo1";
 const Placeholder = () => {
   return (
     <div
-      className="w-full min-h-screen flex justify-center items-center bg-gradient-to-br from-[#1e3a8a] via-[#1e40af] to-[#2563eb] text-white overflow-hidden"
+      className="w-screen flex justify-center items-center bg-gradient-to-br from-[#1e3a8a] via-[#1e40af] to-[#2563eb] text-white"
       style={{
-        height: "100dvh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
+        minHeight: "100vh",
         width: "100vw",
         margin: 0,
         padding: 0,
+        boxSizing: "border-box",
+        paddingBottom: "env(safe-area-inset-bottom)",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <div className="text-center max-w-2xl px-4 py-8">
