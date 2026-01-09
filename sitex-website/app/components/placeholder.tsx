@@ -17,29 +17,20 @@ const Placeholder = () => {
 
       <div className="mt-8 md:mt-12 space-y-4">
         <h2
-          className="text-2xl md:text-3xl lg:text-4xl text-blue-50"
+          className="text-1xl md:text-2xl lg:text-3xl text-blue-50"
           style={{ fontWeight: "600", letterSpacing: "0.01em" }}
         >
-          Website in aanbouw
+          Deze website is momenteel nog in ontwikkeling
         </h2>
-        <p className="text-base md:text-lg text-blue-100 leading-relaxed">
-          Binnenkort beschikbaar.
-        </p>
 
-        {/* Loading Dots */}
-        <div className="flex justify-center gap-2 pt-4">
-          <div
-            className="w-3 h-3 bg-blue-300 rounded-full animate-bounce"
-            style={{ animationDelay: "0s" }}
-          ></div>
-          <div
-            className="w-3 h-3 bg-blue-300 rounded-full animate-bounce"
-            style={{ animationDelay: "0.2s" }}
-          ></div>
-          <div
-            className="w-3 h-3 bg-blue-300 rounded-full animate-bounce"
-            style={{ animationDelay: "0.4s" }}
-          ></div>
+        {/* Subtiele geanimeerde badge i.p.v. loading-dots */}
+        <div className="pt-6 flex justify-center">
+          <div className="inline-flex items-center gap-3 rounded-full border border-blue-300/40 bg-blue-900/30 px-4 py-2 backdrop-blur-sm animate-[pulse_3s_ease-in-out_infinite]">
+            <span className="h-2 w-2 rounded-full bg-blue-300 shadow-[0_0_12px_rgba(147,197,253,0.9)]" />
+            <span className="text-xs md:text-sm tracking-[0.25em] text-blue-100/80">
+              Binnenkort beschikbaar
+            </span>
+          </div>
         </div>
       </div>
     </div>
