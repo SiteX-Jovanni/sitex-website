@@ -13,11 +13,17 @@ import {
 import { motion } from "framer-motion";
 import TextType from "./components/TextType";
 import React from "react";
-import "./globals.css";
 import Placeholder from "./components/placeholder";
 
 export default function App() {
-  if (true) return <Placeholder />;
+  if (true)
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-[#1e3a8a] via-[#1e40af] to-[#2563eb]">
+        <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-center px-4">
+          <Placeholder />
+        </main>
+      </div>
+    );
   return (
     <motion.div
       className="min-h-screen bg-white"
